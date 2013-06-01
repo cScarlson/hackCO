@@ -9,6 +9,15 @@ var express = require('express')
   , http = require('http')
   , path = require('path');
 
+/**
+ * Chokidar watches files for changes, then runs code:
+ *   - transpiles *.coffee to *.js on file change
+ *   - runs jasmine tests on file & test change
+ */
+
+var chokidar = require('chokidar');
+
+
 var app = express();
 
 app.configure(function(){
