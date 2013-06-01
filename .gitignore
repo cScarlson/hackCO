@@ -5,3 +5,4 @@ log/*
 !log/.gitkeep
 repo/*
 !repo/.gitkeep
+.idea
