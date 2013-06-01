@@ -80,3 +80,16 @@ nf start
 ```
 
 #### View in [Browser](http://localhost:3000)
+
+## [Chokidar](https://github.com/paulmillr/chokidar) - Node File Watcher
+
+Watches specific files for changes:
+- transpile coffee to js on file change
+- run tests on file/test change
+- live reload browser on asset file change (css, images)
+
+Examples of configuration:
+- [Brunch](https://github.com/brunch/brunch/blob/master/src/watch.coffee) - Transpile Coffeescript
+- [Socketstream](https://github.com/socketstream/socketstream/blob/master/src/client/live_reload.coffee) - Live Reload
+
+[Stats](https://nodejsmodules.org/tags/watchers) on Chokidar (alternatives are hound, kckr, etc)
