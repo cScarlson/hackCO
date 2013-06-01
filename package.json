@@ -11,5 +11,7 @@
     "ejs": "*",
     "ws": "*",
     "coffee-script": "*"
+    "less-middleware": "*",
   }
+  
 }

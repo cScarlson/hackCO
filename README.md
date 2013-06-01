@@ -80,3 +80,16 @@ nf start
 ```
 
 #### View in [Browser](http://localhost:3000)
+
+## Contributing
+
+There's a few more dependencies you'll need to install to contribute.
+
+#### Less
+
+Less is a node module used to compile CSS assets.
+
+To install:
+```bash
+npm install -g less
+```
