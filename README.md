@@ -1,8 +1,29 @@
 hackCO
 ======
 
-
 ## Getting Started
+
+#### Clone & Init Gitmodules
+
+First clone the repo:
+
+```
+git clone git@github.com:cScarlson/hackCO hackCO
+cd !$
+```
+
+We're using a gitmodule for NDN.js - so you'll need to init this with:
+
+```bash
+git submodule init
+git submodule update
+```
+
+Then, when there are upstream changes to the NDN module, you'll need to update again:
+
+```bash
+git submodule update
+```
 
 #### Install CCNx
 
@@ -16,6 +37,10 @@ brew install https://raw.github.com/dcunited001/homebrew/dc/ccn-keggar/Library/F
 
 If you're on Linux, check out the official [install guide](https://www.ccnx.org/wiki/CCNx/InstallingCCNx).
 
+> Basically, check out the list of dependencies and make sure you have them all.
+> Use your package manager to download the ones you need, then download the CCNx source tarball.
+> Then build from source and make sure the binaries end up in your path.
+G
 #### Install Node/NPM
 
 On OSX:
