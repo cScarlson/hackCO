@@ -35,6 +35,10 @@ If you're on OSX, this should be simple with `brew`.
 brew install https://raw.github.com/dcunited001/homebrew/dc/ccn-keggar/Library/Formula/ccnx.rb
 ```
 
+Note about `ccngetfile` and `ccnputfile`
+
+> If you have problems where these or other javasrc/ binaries are missing, you may need to build from source and call `sudo make install`.
+
 If you're on Linux, check out the official [install guide](https://www.ccnx.org/wiki/CCNx/InstallingCCNx).
 
 > Basically, check out the list of dependencies and make sure you have them all.
@@ -71,12 +75,22 @@ cp Profile.example Procfile
 cp .env.example .env
 ```
 
+#### Set
+
 #### Run CCNx & Node Server
 
 Using Foreman:
 
 ```bash
 nf start
+```
+
+Or run scripts in background:
+
+```bash
+ccndstart
+CCNR_DIRECTORY=ccnr &
+node app.js
 ```
 
 #### View in [Browser](http://localhost:3000)
