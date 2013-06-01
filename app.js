@@ -28,6 +28,9 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
+app.get('/getasync', function(req, res){
+  res.sendfile(__dirname + '/public/ndn-js/js/testing/test-get-async.html');
+});
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
